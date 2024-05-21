@@ -1,0 +1,352 @@
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace; /* Menggunakan font monospace untuk tampilan neo brutality */
+}
+
+/* Background */
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #1d1d1d; /* Menggunakan warna gelap seperti hitam atau abu-abu tua */
+  color: #e6e6e6; /* Menggunakan warna terang seperti abu-abu terang atau putih untuk teks */
+}
+
+/* Header & Navigation */
+header {
+  background-color: #333333; /* Menggunakan warna gelap untuk header */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan yang lebih tebal */
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e6e6e6; /* Menggunakan warna terang untuk teks logo */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan yang lebih tebal */
+}
+
+.nav-links a {
+  color: #e6e6e6; /* Menggunakan warna terang untuk tautan navigasi */
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9900; /* Menggunakan warna yang kontras untuk tautan saat dihover */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #333333; /* Menggunakan warna gelap untuk bagian hero */
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0; /* Menghilangkan sudut membulat */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan yang lebih tebal */
+  margin: 80px auto;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ff9900;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#pinyin-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#pinyin-input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pinyin-input::placeholder {
+  color: #999;
+}
+
+#convert-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#convert-btn:hover {
+  background-color: #ffa31a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#convert-btn:active {
+  background-color: #e68a00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.output-container {
+  margin-top: 20px;
+}
+
+#ipa-output {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9900;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Features Section */
+.features {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 80px auto;
+  max-width: 1000px;
+  position: relative;
+  z-index: 1;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ff9900;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+  font-size: 48px;
+  color: #ff9900;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.feature p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  margin-top: 50px; /* Added margin-top to create space above the footer */
+  text-align: center; /* Center align the content */
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info, .search-location {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
+
+.info h3, .search-location h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info p, .search-location p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.search-location form {
+  display: flex;
+}
+
+.search-location input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-location button {
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-location button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pinyin-input {
+    width: 100%;
+  }
+
+  .feature-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .info, .search-location {
+    text-align: center; /* Center align text in footer on mobile */
+  }
+
+  .search-location input[type="text"] {
+    width: 100%;
+  }
+}
+
+.ipa-chart {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  color: #333; /* Mengubah warna teks menjadi hitam */
+}
+
+.ipa-chart h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff9900;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.ipa-chart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ipa-chart th,
+.ipa-chart td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.ipa-chart th {
+  background-color: #ff9900;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ipa-chart ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ipa-chart li {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333; /* Mengubah warna teks pada daftar menjadi hitam */
+}
+
